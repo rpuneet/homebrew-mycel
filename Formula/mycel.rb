@@ -1,20 +1,20 @@
 class Mycel < Formula
   desc "CLI-first AI agent orchestration system"
   homepage "https://github.com/rpuneet/mycel"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rpuneet/mycel/releases/download/v0.2.2/bc_0.2.2_darwin_arm64.tar.gz"
-      sha256 "f04075595088161dc820643a975332b96a97f68f2ea33c4a3da7e5a8dc67a8ba"
+      url "https://github.com/rpuneet/mycel/releases/download/v0.2.3/mycel_0.2.3_darwin_arm64.tar.gz"
+      sha256 "12c464904fb2dde35861ae146fe4e40000af7064c7996ba9ab759015897e2dae"
     else
-      url "https://github.com/rpuneet/mycel/releases/download/v0.2.2/bc_0.2.2_darwin_amd64.tar.gz"
-      sha256 "60979e913442731434274e95601f076a08052eeccc2fe60867a5ff8aa6dfd556"
+      url "https://github.com/rpuneet/mycel/releases/download/v0.2.3/mycel_0.2.3_darwin_amd64.tar.gz"
+      sha256 "69fac88840db970a0fb557d04e448ba45ecc453d1e267c104d1f5c2844333e9f"
     end
 
     def install
-      bin.install "bc" => "mycel"
+      bin.install "mycel"
     end
   end
 
