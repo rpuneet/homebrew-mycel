@@ -1,16 +1,16 @@
 class Mycel < Formula
   desc "CLI-first AI agent orchestration system"
   homepage "https://github.com/rpuneet/mycel"
-  version "0.4.2"
+  version "0.4.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rpuneet/mycel/releases/download/v0.4.2/mycel_0.4.2_darwin_arm64.tar.gz"
-      sha256 "8983c16da348a71955a3eda79f6eb87946a356e4dff3e03a1dfe48702eff433a"
+      url "https://github.com/rpuneet/mycel/releases/download/v0.4.3/mycel_0.4.3_darwin_arm64.tar.gz"
+      sha256 "c4b016adb5ec862f379ac3071486bd4f624f2157afb6b25e302376ea98403dd3"
     else
-      url "https://github.com/rpuneet/mycel/releases/download/v0.4.2/mycel_0.4.2_darwin_amd64.tar.gz"
-      sha256 "46a7a77a348d0e36fa1abe5f57e76eda293fccc8c68aef8f9459abd98cfea08a"
+      url "https://github.com/rpuneet/mycel/releases/download/v0.4.3/mycel_0.4.3_darwin_amd64.tar.gz"
+      sha256 "3c5c16ed981b0911703fda428ba8331c2654adad710cac94de753ab51d10525b"
     end
 
     def install
@@ -20,11 +20,11 @@ class Mycel < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rpuneet/mycel/releases/download/v0.4.2/mycel_0.4.2_linux_arm64.tar.gz"
-      sha256 "31398bb105722b15b633ba4d7399cc8731c240ea5e7e1d1c18322a1f4213fc86"
+      url "https://github.com/rpuneet/mycel/releases/download/v0.4.3/mycel_0.4.3_linux_arm64.tar.gz"
+      sha256 "8d4d86dc37fb1acd1f19dd55a3ca0b0195bb398b47b81e2f565bd76945795a71"
     elsif Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rpuneet/mycel/releases/download/v0.4.2/mycel_0.4.2_linux_amd64.tar.gz"
-      sha256 "8dad4bf16f588e99730400598b59102959bd52635ec8914ce0a4fd72e2e32769"
+      url "https://github.com/rpuneet/mycel/releases/download/v0.4.3/mycel_0.4.3_linux_amd64.tar.gz"
+      sha256 "338a264d360c79f9d20342f600f5c2f14cfca72c99e195ca730375794d60d1e0"
     end
 
     def install
